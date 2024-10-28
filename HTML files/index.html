@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Day</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../CSS files/styles.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide anandhu">
+                <h1>Anandhu</h1>
+                <a href="../HTML files/anandhu.html" class="stats">Stats</a>
+            </div>
+            <!-- Page 2 -->
+            <div class="swiper-slide kiran">
+                <h1>Kiran</h1>
+                <a href="../HTML files/kiran.html" class="stats">Stats</a>
+            </div>
+            <!-- Page 3 -->
+            <div class="swiper-slide sudhin">
+                <h1>Sudhin</h1>
+                <a href="../HTML files/sudhin.html" class="stats">Stats</a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',  // Set to 'vertical' if you want vertical swiping
+            loop: false,  // Set to true if you want the pages to loop
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            touchEventsTarget: 'wrapper',  // Ensure touch events are captured within the swiper wrapper
+            simulateTouch: true,  // Enable touch gestures
+            grabCursor: false,  // Disable grab cursor for cleaner swiping feel
+            followFinger: true,  // Ensure that swiper follows finger movement
+            threshold: 20,  // Adjust the sensitivity of the swipe gesture
+        });
+    </script>
+</body>
+</html>
+

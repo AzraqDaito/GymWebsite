@@ -1,0 +1,48 @@
+/* Basic styling for the swiper container and slides */
+html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+}
+
+.swiper-container {
+        height: 100%;
+}
+
+.swiper-slide {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        font-size: 24px;
+        color: white;
+    }
+
+.anandhu {
+        background-color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kiran {
+        background-color: #2196F3;
+        font
+}
+
+.sudhin {
+        background-color: #4CAF50;
+}
+
+a, a:visited, a:hover, a:active {
+        color: inherit;        /* Inherit color from the parent element */
+        text-decoration: none; /* Remove underline */
+    }
+
+.stats {
+        position: absolute;
+        top: 90%; /* Distance from the top */
+        left: 50%; /* Distance from the left */
+        transform: translate(-50%, -50%); /* Adjust the exact position */
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5); /* Optional background */
+        color: white; /* Text color */
+    }

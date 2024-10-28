@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/landingpage.jpg");
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+
+/* Remove styling for all states of the link */
+a, a:visited, a:hover, a:active {
+    color: inherit;        /* Inherit color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+ .glow-animate {
+            font-size: 100px;
+            color: rgb(255, 255, 255);
+            text-shadow: 
+                0 0 5px #ff0000,
+                0 0 10px #ff0000,
+                0 0 15px #ff0000;
+            animation: glow-animation 1.5s infinite alternate;
+}
+
+@keyframes glow-animation {
+        from {
+                text-shadow: 
+                    0 0 5px #00ffdd,
+                    0 0 10px #00ffdd,
+                    0 0 15px #00ffdd;
+            }
+        to {
+                text-shadow: 
+                    0 0 10px #00ffdd,
+                    0 0 20px #00ffdd,
+                    0 0 30px #00ffdd;
+            }
+}
+
+.indexnav {
+    border: 5px solid #ffffff; /* Red border */
+    padding: 20px 30px 20px 30px; /* Space between text and border */
+    border-radius: 30px;
+    margin: 30px; /* Space around the box */
+    display: inline-block; /* Adjusts the box to fit the text */
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
+    
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.indexnav:hover {
+    background-color: #ffffff;
+    transform:translate3d(5px, 5px,5px);
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+
+
+
